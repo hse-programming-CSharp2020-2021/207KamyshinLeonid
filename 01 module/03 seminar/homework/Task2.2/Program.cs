@@ -28,7 +28,7 @@ namespace Task2._2
                 double x, y;
                 do Console.WriteLine("Введите два числа: ");
                 while (!Read(out x) || !Read(out y));
-                Console.WriteLine($"Результат: {CalcG(x, y)}");
+                Console.WriteLine($"Результат: {CalcG(x, y):f3}");
             }
         }
     }
