@@ -15,7 +15,7 @@ namespace Task3
         {
             int n, a, d;
             do Console.WriteLine("Введите числа: ");
-            while (!int.TryParse(Console.ReadLine(), out n) || !int.TryParse(Console.ReadLine(), out a) || !int.TryParse(Console.ReadLine(), out d) || n <= 0);
+            while (!int.TryParse(Console.ReadLine(), out n) || !int.TryParse(Console.ReadLine(), out a) || !int.TryParse(Console.ReadLine(), out d) || n <= 1);
             long[] arr = new long[n];
             gen(arr, n, a, d);
             foreach(long to in arr)
