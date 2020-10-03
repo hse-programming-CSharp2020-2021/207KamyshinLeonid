@@ -8,7 +8,7 @@ namespace Task5
         {
             Random rng = new Random();
             int[] arr = new int[n];
-            for(int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
                 arr[i] = rng.Next(-10, 11);
             }
@@ -22,7 +22,7 @@ namespace Task5
         {
             int n;
             do Console.WriteLine("Введите длину: ");
-            while(!int.TryParse(Console.ReadLine(),out n) || n <= 0);
+            while (!int.TryParse(Console.ReadLine(), out n) || n <= 0);
             int[] res = cmpr(n);
             Console.WriteLine("Сжатый массив: ");
             Array.ForEach(res, x => Console.Write($"{x} "));
