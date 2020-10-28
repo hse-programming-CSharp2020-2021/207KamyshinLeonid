@@ -60,6 +60,10 @@ namespace Task5._2_0
         {
             return $"Real: {Re}, Imaginary: {Im}";
         }
+        public static MyComplex Conjugate(MyComplex a)
+        {
+            return new MyComplex(a.Re, -a.Im);
+        }
         public static MyComplex operator +(MyComplex a, MyComplex b)
         {
             return new MyComplex(a.Re + b.Re, a.Im + b.Im);
@@ -80,8 +84,14 @@ namespace Task5._2_0
         {
             return new MyComplex(a.Re * b.Re - a.Im * b.Im, a.Re * b.Im + a.Im * b.Re);
         }
-
-
+        public static MyComplex operator /(MyComplex a, double b)
+        {
+            return new MyComplex(a.Re / b, a.Im / b);
+        }
+        public static MyComplex operator /(MyComplex a, MyComplex b)
+        {
+            return new MyComplex(a / (b * Conjugate(b)).Re);
+        }
     }
     class Program
     {
