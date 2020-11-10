@@ -29,7 +29,7 @@ namespace Task8
         }
         public override string ToString()
         {
-            return $"x: {x:f3}, y: {y:f3}"; 
+            return $"x: {x:f3}, y: {y:f3}";
         }
     }
     class Triangle
@@ -91,9 +91,9 @@ namespace Task8
             double[] pts = new double[6];
             Triangle[] arr = new Triangle[n];
             Console.WriteLine($"{n} треугольников");
-            for(int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
-                for(int j = 0; j < 6; j++)
+                for (int j = 0; j < 6; j++)
                 {
                     pts[j] = rng.NextDouble() * 20 - 10;
                 }
@@ -101,6 +101,6 @@ namespace Task8
                 Console.WriteLine(arr[i].ToString());
             }
         }
-        
+
     }
 }
