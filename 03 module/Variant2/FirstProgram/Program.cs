@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 using MyLibrary;
-//using System.Text.Encodings.CodePages;
+//using System.Text.Encodings
 namespace FirstProgram
 {
     class Program
